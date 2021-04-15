@@ -1,0 +1,80 @@
+html { box-sizing: border-box; }
+
+*, ::after, ::before { box-sizing: inherit; }
+
+:root {
+  --white: rgb(255, 255, 255);
+  --pink: rgb(255,105,180);
+  --grey: rgb(233, 236, 240);
+  --brownish: rgb(228, 225, 222);
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  background-color: var(--grey);
+  font-family: sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+  background-color: var(--white);
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  background-color: var(--brownish);
+  padding: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem; 
+  text-align: center;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+}
+
+.Hanka,
+.Jana,
+.Marketa,
+.Monika {
+  background-color: var(--white);
+  width: 22%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.Hanka img,
+.Jana img,
+.Marketa img,
+.Monika img
+ {
+width: 150px;
+border-radius: 50%;
+}
+
+.ikony {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.ikony img {
+  width: 35px;
+  border-radius: 0;
+}
+
+.ikony img:hover {
+  background-color: var(--pink);
+} /*Nefunguje pro LinkedIn:-(,*/ 
+
+h2 {
+margin-bottom: 2rem;
+font-weight: bold;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
